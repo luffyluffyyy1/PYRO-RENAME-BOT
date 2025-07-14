@@ -26,20 +26,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "27306108")
+    API_HASH  = os.environ.get("API_HASH", "cde16d68e439064b3194cb369a56d905")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7849892085:AAGt8YXGuuz2NNVYWfXiMcsry-z2jkq7okU") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","luffyluffyyy1")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://luffyluffyyy1:uXnGuZAG0zbxGOjL@cluster0.rmyxhem.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
-    BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+    BOT_UPTIME  = time.time(5)
+    START_PIC   = os.environ.get("START_PIC", "https://envs.sh/Fi7.jpg?=ilovSTARLEY")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6815934546').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "https://t.me/luffyyyz") 
+    LOG_CHANNEL = int(os.environ.get("-1002621404043"))
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
     # wes response configuration     
